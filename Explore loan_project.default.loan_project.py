@@ -1,6 +1,8 @@
 # Databricks notebook source
 # MAGIC %sql
-# MAGIC SELECT * FROM `loan_project`.`default`.`loan_project`;
+# MAGIC SELECT * FROM `loan_project`.`default`.`loan_project`
+# MAGIC
+# MAGIC LIMIT 5;
 
 # COMMAND ----------
 
@@ -44,7 +46,8 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT distinct Occupation FROM `loan_project`.`default`.`loan_project`;
+# MAGIC SELECT distinct Occupation FROM `loan_project`.`default`.`loan_project` 
+# MAGIC LIMIT 10;
 
 # COMMAND ----------
 
@@ -56,17 +59,15 @@
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC # Loan Category Distribution 
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT  Loan_Category FROM `loan_project`.`default`.`loan_project`;
+# MAGIC SELECT  Loan_Category FROM `loan_project`.`default`.`loan_project`
+# MAGIC
+# MAGIC LIMIT 5;
 
 # COMMAND ----------
 
